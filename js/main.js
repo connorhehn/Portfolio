@@ -24,8 +24,12 @@ document.getElementById('theme-toggle').addEventListener('click', () => {
    ========================================================================== */
 
 const SCRAMBLE_CHARS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$%&';
-const FINAL_TEXT     = 'Software Engineer.';
-const DURATION_MS    = 1600;
+const SCRAMBLE_TEXTS = [
+  'Software Engineer.',
+  'Backend Developer.',
+  'Cloud Architect.',
+];
+const DURATION_MS    = 1200;
 const TICK_MS        = 38;
 
 function scramble(el, text, duration, onComplete) {
@@ -53,15 +57,16 @@ function scramble(el, text, duration, onComplete) {
   }, TICK_MS);
 }
 
-function loopScramble(el, text) {
+function loopScramble(el, index) {
+  const text = SCRAMBLE_TEXTS[index];
   scramble(el, text, DURATION_MS, () => {
-    setTimeout(() => loopScramble(el, text), 4000);
+    setTimeout(() => loopScramble(el, (index + 1) % SCRAMBLE_TEXTS.length), 2500);
   });
 }
 
 const scrambleEl = document.getElementById('scramble-text');
 if (scrambleEl) {
-  setTimeout(() => loopScramble(scrambleEl, FINAL_TEXT), 600);
+  setTimeout(() => loopScramble(scrambleEl, 0), 600);
 }
 
 /* ==========================================================================
