@@ -70,10 +70,31 @@ if (scrambleEl) {
 }
 
 /* ==========================================================================
-   Nav — scroll state + active link tracking
+   Hamburger menu
    ========================================================================== */
 
 const nav      = document.getElementById('nav');
+const hamburger = document.getElementById('nav-hamburger');
+if (hamburger) {
+  hamburger.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('nav-open');
+    hamburger.setAttribute('aria-expanded', isOpen);
+    hamburger.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+  });
+
+  document.querySelectorAll('#nav-mobile-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('nav-open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      hamburger.setAttribute('aria-label', 'Open menu');
+    });
+  });
+}
+
+/* ==========================================================================
+   Nav — scroll state + active link tracking
+   ========================================================================== */
+
 const navLinks = document.querySelectorAll('.nav-links a[data-nav]');
 const sections = document.querySelectorAll('section[id]');
 
