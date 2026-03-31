@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Connor Hehn — Backend Engineer</title>
+  <meta name="description" content="Backend software engineer focused on scalable systems, API design, and distributed architecture." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <!-- Prevent flash of wrong theme -->
+  <script>(function(){var t=localStorage.getItem('ch-theme');if(t)document.documentElement.setAttribute('data-theme',t);}());</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" aria-label="Home">ch<span class="cursor-blink">_</span></a>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="#skills" data-nav="skills">skills</a></li>
+          <li><a href="#projects" data-nav="projects">projects</a></li>
+          <li><a href="#contact" data-nav="contact">contact</a></li>
+        </ul>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Switch to light mode">
+          <!-- Sun: shown in dark mode (click to go light) -->
+          <svg class="icon-sun" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <circle cx="8" cy="8" r="2.8"/>
+            <line x1="8" y1="1" x2="8" y2="2.6"/>
+            <line x1="8" y1="13.4" x2="8" y2="15"/>
+            <line x1="1" y1="8" x2="2.6" y2="8"/>
+            <line x1="13.4" y1="8" x2="15" y2="8"/>
+            <line x1="3.05" y1="3.05" x2="4.17" y2="4.17"/>
+            <line x1="11.83" y1="11.83" x2="12.95" y2="12.95"/>
+            <line x1="12.95" y1="3.05" x2="11.83" y2="4.17"/>
+            <line x1="4.17" y1="11.83" x2="3.05" y2="12.95"/>
+          </svg>
+          <!-- Moon: shown in light mode (click to go dark) -->
+          <svg class="icon-moon" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M13.5 10A6 6 0 1 1 6 2.5a4.5 4.5 0 0 0 7.5 7.5z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+    <div class="hero-content container">
+      <!-- <p class="hero-label"><span class="comment">// </span>backend engineer</p> -->
+      <h1 class="hero-name">
+        <span class="name-solid">Connor</span>
+        <span class="name-outline">Hehn</span>
+      </h1>
+      <p class="hero-tagline" id="scramble-text" aria-label="Software Engineer."></p>
+      <div class="hero-cta">
+        <a href="#skills" class="btn btn-ghost">Skills</a>
+        <a href="#projects" class="btn btn-primary">Projects</a>
+        <a href="#contact" class="btn btn-ghost">Contact</a>
+      </div>
+    </div>
+    <div class="scroll-hint" aria-hidden="true">
+      <span class="mono">scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num mono">01</span>
+        <h2>Skills</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-group reveal">
+          <h4 class="skill-category mono">languages</h4>
+          <div class="skill-tags">
+            <span>Python</span>
+            <span>Java</span>
+            <span>JavaScript</span>
+            <span>SQL</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h4 class="skill-category mono">cloud / aws</h4>
+          <div class="skill-tags">
+            <span>Lambda</span>
+            <span>S3</span>
+            <span>DynamoDB</span>
+            <span>EventBridge</span>
+            <span>API Gateway</span>
+            <span>CDK</span>
+            <span>CloudFormation</span>
+            <span>EKS</span>
+            <span>Step Functions</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h4 class="skill-category mono">frameworks</h4>
+          <div class="skill-tags">
+            <span>Spring Boot</span>
+            <span>FastAPI</span>
+            <span>Flask</span>
+            <span>React</span>
+            <span>JUnit 5</span>
+            <span>Pytest</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h4 class="skill-category mono">databases</h4>
+          <div class="skill-tags">
+            <span>DynamoDB</span>
+            <span>MongoDB</span>
+            <span>PostgreSQL</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="certs-row reveal">
+        <h4 class="skill-category mono">certifications</h4>
+        <div class="certs-list">
+          <a href="https://www.credly.com/badges/56f24f2d-bdc5-4ae8-9d1e-708feed8ca5a/public_url"
+             target="_blank" rel="noopener noreferrer" class="cert-item">
+            <span class="cert-provider mono">AWS</span>
+            <span class="cert-name">Certified Solutions Architect – Associate</span>
+            <span class="cert-arrow">↗</span>
+          </a>
+          <a href="https://www.credly.com/badges/1179775b-0d3d-47c4-a63e-ad7de4f694e0/public_url"
+             target="_blank" rel="noopener noreferrer" class="cert-item">
+            <span class="cert-provider mono">AWS</span>
+            <span class="cert-name">Certified Developer – Associate</span>
+            <span class="cert-arrow">↗</span>
+          </a>
+          <a href="https://www.credly.com/badges/b241408b-ddde-4a7e-ba55-0b103b3504fb/public_url"
+             target="_blank" rel="noopener noreferrer" class="cert-item">
+            <span class="cert-provider mono">AWS</span>
+            <span class="cert-name">Certified Cloud Practitioner</span>
+            <span class="cert-arrow">↗</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num mono">02</span>
+        <h2>Projects</h2>
+      </div>
+      <div class="projects-grid">
+
+        <article class="project-card reveal">
+          <div class="terminal-bar">
+            <div class="terminal-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <span class="terminal-path mono">~/lambda-layer-explorer</span>
+          </div>
+          <div class="card-body">
+            <h3>Lambda Layer Explorer</h3>
+            <p>AWS publishes official Lambda layers but gives you no way to see what's inside them. This runs a weekly serverless pipeline that probes, downloads, and inspects every layer — then surfaces the results in a searchable UI. Discovery works around AWS API limitations using a seed-based binary search across layer versions.</p>
+            <div class="tech-tags">
+              <span>Python</span>
+              <span>AWS CDK</span>
+              <span>Lambda</span>
+              <span>S3</span>
+              <span>EventBridge</span>
+              <span>CloudFront</span>
+              <span>React</span>
+              <span>TypeScript</span>
+            </div>
+            <div class="card-links">
+              <!-- <a href="#" class="link-arrow">GitHub ↗</a> -->
+              <a href="https://github.com/connorhehn/LambdaLayerExplorer" target="_blank" rel="noopener noreferrer" class="link-arrow">Github ↗</a>
+              <a href="https://lambda-layer-explorer.com" target="_blank" rel="noopener noreferrer" class="link-arrow">Live ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="terminal-bar">
+            <div class="terminal-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <span class="terminal-path mono">~/stag-chatbot</span>
+          </div>
+          <div class="card-body">
+            <h3>Stag Chatbot</h3>
+            <p>Capstone project — a multitasking AI chatbot built for Fairfield University. Handles natural language queries with NLP and voice recognition, integrates third-party APIs including Spotify and interactive maps, and is deployed globally via Docker on Hugging Face Spaces.</p>
+            <div class="tech-tags">
+              <span>Python</span>
+              <span>Flask</span>
+              <span>NLP</span>
+              <span>Docker</span>
+              <span>Hugging Face</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/connorhehn/CapstoneProject" target="_blank" rel="noopener noreferrer" class="link-arrow">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num mono">03</span>
+        <h2>Contact</h2>
+      </div>
+      <div class="contact-list reveal">
+        <a href="mailto:connor.hehn@gmail.com" class="contact-row">
+          <span class="contact-label mono">email</span>
+          <span class="contact-val">connor.hehn@gmail.com</span>
+          <span class="contact-arrow">↗</span>
+        </a>
+        <a href="https://github.com/connorhehn" target="_blank" rel="noopener noreferrer" class="contact-row">
+          <span class="contact-label mono">github</span>
+          <span class="contact-val">github.com/connorhehn</span>
+          <span class="contact-arrow">↗</span>
+        </a>
+        <a href="https://linkedin.com/in/connorhehn" target="_blank" rel="noopener noreferrer" class="contact-row">
+          <span class="contact-label mono">linkedin</span>
+          <span class="contact-val">linkedin.com/in/connorhehn</span>
+          <span class="contact-arrow">↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <span class="mono muted">connor hehn &copy; 2025</span>
+      <!-- <span class="mono muted">built from scratch</span> -->
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
