@@ -18,11 +18,13 @@
   <!-- NAV -->
   <nav id="nav">
     <div class="nav-inner">
-      <a href="#" class="nav-logo" aria-label="Home">ch<span class="cursor-blink">_</span></a>
+      <a class="nav-logo" aria-label="Home">ch<span class="cursor-blink">_</span></a>
       <div class="nav-right">
         <ul class="nav-links">
+          <li><a href="#experience" data-nav="experience">experience</a></li>
           <li><a href="#skills" data-nav="skills">skills</a></li>
           <li><a href="#projects" data-nav="projects">projects</a></li>
+          <li><a href="#education" data-nav="education">education</a></li>
           <li><a href="#contact" data-nav="contact">contact</a></li>
         </ul>
         <button id="theme-toggle" class="theme-toggle" aria-label="Switch to light mode">
@@ -59,8 +61,10 @@
       </h1>
       <p class="hero-tagline" id="scramble-text" aria-label="Software Engineer."></p>
       <div class="hero-cta">
+        <a href="#experience" class="btn btn-ghost">Experience</a>
         <a href="#skills" class="btn btn-ghost">Skills</a>
         <a href="#projects" class="btn btn-primary">Projects</a>
+        <a href="#education" class="btn btn-ghost">Education</a>
         <a href="#contact" class="btn btn-ghost">Contact</a>
       </div>
     </div>
@@ -70,11 +74,60 @@
     </div>
   </section>
 
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num mono">01</span>
+        <h2>Experience</h2>
+      </div>
+      <div class="exp-list">
+
+        <div class="exp-item reveal">
+          <div class="exp-header">
+            <div class="exp-left">
+              <span class="exp-company">Travelers</span>
+              <span class="exp-role">Associate Software Engineer, Cloud Architecture</span>
+            </div>
+            <div class="exp-right">
+              <span class="exp-dates mono">Jul 2025 – Present</span>
+              <span class="exp-location mono">Hartford, CT</span>
+            </div>
+          </div>
+          <ul class="exp-bullets">
+            <li>Build backend platform APIs and AWS infrastructure using CDK, Python, Java, Spring Boot, EKS, Lambda, DynamoDB, and Step Functions.</li>
+            <li>Develop automation components for platform provisioning, metadata management, and cloud application deployment.</li>
+            <li>Improve CI/CD pipelines, IAM policies, and secure AWS integration patterns for internal platform delivery.</li>
+          </ul>
+        </div>
+
+        <div class="exp-item reveal">
+          <div class="exp-header">
+            <div class="exp-left">
+              <span class="exp-company">Travelers</span>
+              <span class="exp-role">Engineering Development Program</span>
+            </div>
+            <div class="exp-right">
+              <span class="exp-dates mono">Jul 2024 – Jun 2025</span>
+              <span class="exp-location mono">Hartford, CT</span>
+            </div>
+          </div>
+          <ul class="exp-bullets">
+            <li>Built an internal AWS resource governance and remediation platform using event-driven serverless architecture.</li>
+            <li>Developed Python APIs, Lambda functions, and workflows using EventBridge, DynamoDB, SNS, and CloudTrail to detect changes and trigger automated actions.</li>
+            <li>Supported a cross-account AWS architecture for centralized onboarding and monitoring of ~20 internal AWS accounts.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- SKILLS -->
   <section id="skills" class="section">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-num mono">01</span>
+        <span class="section-num mono">02</span>
         <h2>Skills</h2>
       </div>
       <div class="skills-grid">
@@ -158,7 +211,7 @@
   <section id="projects" class="section">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-num mono">02</span>
+        <span class="section-num mono">03</span>
         <h2>Projects</h2>
       </div>
       <div class="projects-grid">
@@ -222,11 +275,42 @@
     </div>
   </section>
 
+  <!-- EDUCATION -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num mono">04</span>
+        <h2>Education</h2>
+      </div>
+      <div class="edu-grid">
+
+        <div class="edu-item reveal">
+          <p class="edu-degree">M.S. Software Engineering</p>
+          <p class="edu-school">Fairfield University — Fairfield, CT</p>
+          <div class="edu-meta">
+            <span class="edu-dates mono">2022 – 2024</span>
+            <span class="edu-gpa mono">GPA 3.97</span>
+          </div>
+        </div>
+
+        <div class="edu-item reveal">
+          <p class="edu-degree">B.S. Biomedical Engineering</p>
+          <p class="edu-school">Fairfield University — Fairfield, CT</p>
+          <div class="edu-meta">
+            <span class="edu-dates mono">2016 – 2020</span>
+            <span class="edu-gpa mono">GPA 3.65</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- CONTACT -->
   <section id="contact" class="section">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-num mono">03</span>
+        <span class="section-num mono">05</span>
         <h2>Contact</h2>
       </div>
       <div class="contact-list reveal">
