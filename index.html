@@ -22,8 +22,8 @@
       <div class="nav-right">
         <ul class="nav-links">
           <li><a href="#experience" data-nav="experience">experience</a></li>
-          <li><a href="#skills" data-nav="skills">skills</a></li>
           <li><a href="#projects" data-nav="projects">projects</a></li>
+          <li><a href="#skills" data-nav="skills">skills</a></li>
           <li><a href="#education" data-nav="education">education</a></li>
           <li><a href="#contact" data-nav="contact">contact</a></li>
         </ul>
@@ -55,8 +55,8 @@
     <div class="nav-mobile-menu" id="nav-mobile-menu">
       <ul>
         <li><a href="#experience" data-nav="experience">experience</a></li>
-        <li><a href="#skills" data-nav="skills">skills</a></li>
         <li><a href="#projects" data-nav="projects">projects</a></li>
+        <li><a href="#skills" data-nav="skills">skills</a></li>
         <li><a href="#education" data-nav="education">education</a></li>
         <li><a href="#contact" data-nav="contact">contact</a></li>
       </ul>
@@ -76,8 +76,8 @@
       <p class="hero-tagline" id="scramble-text" aria-label="Software Engineer. Backend Developer. Cloud Architect."></p>
       <div class="hero-cta">
         <a href="#experience" class="btn btn-ghost">Experience</a>
+        <a href="#projects" class="btn btn-ghost">Projects</a>
         <a href="#skills" class="btn btn-ghost">Skills</a>
-        <a href="#projects" class="btn btn-primary">Projects</a>
         <a href="#education" class="btn btn-ghost">Education</a>
         <a href="#contact" class="btn btn-ghost">Contact</a>
       </div>
@@ -137,11 +137,108 @@
     </div>
   </section>
 
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num mono">02</span>
+        <h2>Projects</h2>
+      </div>
+      <div class="projects-grid">
+
+        <article class="project-card reveal">
+          <div class="terminal-bar">
+            <div class="terminal-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <span class="terminal-path mono">~/lambda-layer-explorer</span>
+          </div>
+          <div class="card-body">
+            <h3>Lambda Layer Explorer</h3>
+            <p>AWS publishes official Lambda layers but gives you no way to see what's inside them. This runs a weekly serverless pipeline that probes, downloads, and inspects every layer — then surfaces the results in a searchable UI. Discovery works around AWS API limitations using a seed-based binary search across layer versions.</p>
+            <div class="tech-tags">
+              <span>Python</span>
+              <span>AWS CDK</span>
+              <span>Lambda</span>
+              <span>S3</span>
+              <span>EventBridge</span>
+              <span>CloudFront</span>
+              <span>React</span>
+              <span>TypeScript</span>
+            </div>
+            <div class="card-links">
+              <!-- <a href="#" class="link-arrow">GitHub ↗</a> -->
+              <a href="https://github.com/connorhehn/LambdaLayerExplorer" target="_blank" rel="noopener noreferrer" class="link-arrow">Github ↗</a>
+              <a href="https://lambda-layer-explorer.com" target="_blank" rel="noopener noreferrer" class="link-arrow">Live ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="terminal-bar">
+            <div class="terminal-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <span class="terminal-path mono">~/nhl-playoff-path</span>
+          </div>
+          <div class="card-body">
+            <h3>NHL Playoff Path</h3>
+            <p>Real-time NHL playoff bracket visualizer and what-if simulator. Pulls live standings from the NHL API and computes seeding according to official rules. The simulator lets you set outcomes for any remaining game and runs 5,000 Monte Carlo simulations to show updated playoff odds across all 32 teams instantly.</p>
+            <div class="tech-tags">
+              <span>React</span>
+              <span>Tailwind CSS</span>
+              <span>AWS CDK</span>
+              <span>Lambda</span>
+              <span>S3</span>
+              <span>CloudFront</span>
+              <span>TypeScript</span>
+              <span>Node.js</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/connorhehn/NHL-Playoff-Path" target="_blank" rel="noopener noreferrer" class="link-arrow">GitHub ↗</a>
+              <a href="https://nhlplayoffpath.com" target="_blank" rel="noopener noreferrer" class="link-arrow">Live ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="terminal-bar">
+            <div class="terminal-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <span class="terminal-path mono">~/stag-chatbot</span>
+          </div>
+          <div class="card-body">
+            <h3>Stag Chatbot</h3>
+            <p>Capstone project — a multitasking AI chatbot built for Fairfield University. Handles natural language queries with NLP and voice recognition, integrates third-party APIs including Spotify and interactive maps, and is deployed globally via Docker on Hugging Face Spaces.</p>
+            <div class="tech-tags">
+              <span>Python</span>
+              <span>Flask</span>
+              <span>NLP</span>
+              <span>Docker</span>
+              <span>Hugging Face</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/connorhehn/CapstoneProject" target="_blank" rel="noopener noreferrer" class="link-arrow">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
   <!-- SKILLS -->
   <section id="skills" class="section">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-num mono">02</span>
+        <span class="section-num mono">03</span>
         <h2>Skills</h2>
       </div>
       <div class="skills-grid">
@@ -218,74 +315,6 @@
         </div>
       </div>
 
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects" class="section">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-num mono">03</span>
-        <h2>Projects</h2>
-      </div>
-      <div class="projects-grid">
-
-        <article class="project-card reveal">
-          <div class="terminal-bar">
-            <div class="terminal-dots">
-              <span class="dot dot-red"></span>
-              <span class="dot dot-yellow"></span>
-              <span class="dot dot-green"></span>
-            </div>
-            <span class="terminal-path mono">~/lambda-layer-explorer</span>
-          </div>
-          <div class="card-body">
-            <h3>Lambda Layer Explorer</h3>
-            <p>AWS publishes official Lambda layers but gives you no way to see what's inside them. This runs a weekly serverless pipeline that probes, downloads, and inspects every layer — then surfaces the results in a searchable UI. Discovery works around AWS API limitations using a seed-based binary search across layer versions.</p>
-            <div class="tech-tags">
-              <span>Python</span>
-              <span>AWS CDK</span>
-              <span>Lambda</span>
-              <span>S3</span>
-              <span>EventBridge</span>
-              <span>CloudFront</span>
-              <span>React</span>
-              <span>TypeScript</span>
-            </div>
-            <div class="card-links">
-              <!-- <a href="#" class="link-arrow">GitHub ↗</a> -->
-              <a href="https://github.com/connorhehn/LambdaLayerExplorer" target="_blank" rel="noopener noreferrer" class="link-arrow">Github ↗</a>
-              <a href="https://lambda-layer-explorer.com" target="_blank" rel="noopener noreferrer" class="link-arrow">Live ↗</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card reveal">
-          <div class="terminal-bar">
-            <div class="terminal-dots">
-              <span class="dot dot-red"></span>
-              <span class="dot dot-yellow"></span>
-              <span class="dot dot-green"></span>
-            </div>
-            <span class="terminal-path mono">~/stag-chatbot</span>
-          </div>
-          <div class="card-body">
-            <h3>Stag Chatbot</h3>
-            <p>Capstone project — a multitasking AI chatbot built for Fairfield University. Handles natural language queries with NLP and voice recognition, integrates third-party APIs including Spotify and interactive maps, and is deployed globally via Docker on Hugging Face Spaces.</p>
-            <div class="tech-tags">
-              <span>Python</span>
-              <span>Flask</span>
-              <span>NLP</span>
-              <span>Docker</span>
-              <span>Hugging Face</span>
-            </div>
-            <div class="card-links">
-              <a href="https://github.com/connorhehn/CapstoneProject" target="_blank" rel="noopener noreferrer" class="link-arrow">GitHub ↗</a>
-            </div>
-          </div>
-        </article>
-
-      </div>
     </div>
   </section>
 
